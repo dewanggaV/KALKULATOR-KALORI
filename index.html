@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kalkulator Kalori</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+</div>
+  <div class="calculator">
+    <h1>Kalkulator Kalori</h1>
+    <div class="input-wrapper">
+      <label for="gender">Jenis Kelamin:</label>
+      <select id="gender">
+        <option value="male">Laki-laki</option>
+        <option value="female">Perempuan</option>
+      </select>
+    </div>
+    <div class="input-wrapper">
+      <label for="age">Usia (tahun):</label>
+      <input type="number" id="age" placeholder="Masukkan usia">
+    </div>
+    <div class="input-wrapper">
+      <label for="weight">Berat Badan (kg):</label>
+      <input type="number" id="weight" placeholder="Masukkan berat badan">
+    </div>
+    <div class="input-wrapper">
+      <label for="height">Tinggi Badan (cm):</label>
+      <input type="number" id="height" placeholder="Masukkan tinggi badan">
+    </div>
+    <div class="input-wrapper">
+      <label for="activity-level">Tingkat Aktivitas:</label>
+      <select id="activity-level">
+        <option value="1.2">Sangat Sedikit atau Tidak Aktif</option>
+        <option value="1.375">Ringan (Latihan Ringan 1-3 hari/minggu)</option>
+        <option value="1.55">Sedang (Latihan Sedang 3-5 hari/minggu)</option>
+        <option value="1.725">Aktif (Latihan Intensif 6-7 hari/minggu)</option>
+        <option value="1.9">Sangat Aktif (Latihan Sangat Intensif & Pekerjaan Fisik Berat)</option>
+      </select>
+    </div>
+    <button onclick="calculateCalories()">Hitung Kebutuhan Kalori</button>
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
